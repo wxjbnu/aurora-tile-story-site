@@ -1,50 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aurora Tile Story</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Tile Story - Support</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; color: #1f2937; background: #f8fafc; }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 24px; }
-    h1 { margin-bottom: 8px; }
-    .subtitle { color: #475569; margin-top: 0; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
-    .card { background: white; border-radius: 12px; padding: 10px; box-shadow: 0 1px 6px rgba(0,0,0,.08); }
-    img { width: 100%; border-radius: 8px; display: block; }
-    .cta { margin: 18px 0; }
-    a.btn { background: #2563eb; color: white; text-decoration: none; padding: 10px 14px; border-radius: 10px; display: inline-block; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #F5F5F7;
+      color: #18212F;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 48px 20px 72px; }
+    .hero { text-align: center; padding: 36px 0 32px; }
+    h1 { color: #6D28D9; font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 900; letter-spacing: -0.05em; }
+    .subtitle { color: #F59E0B; font-size: 1.35rem; font-weight: 800; margin-top: 8px; }
+    .tagline { max-width: 680px; margin: 18px auto 0; color: #455A64; font-size: 1.08rem; }
+
+    .grid { display: grid; gap: 20px; }
+    .screenshots { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin: 28px 0 36px; }
+    .shot { background: #fff; border-radius: 18px; padding: 10px; box-shadow: 0 14px 34px rgba(15,23,42,.12); }
+    .shot img { width: 100%; aspect-ratio: 9 / 19.5; object-fit: cover; border-radius: 14px; display: block; }
+
+    .cards { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card { background: #fff; border-radius: 18px; padding: 24px; box-shadow: 0 12px 28px rgba(15,23,42,.08); }
+    h2 { color: #6D28D9; font-size: 1.35rem; margin-bottom: 12px; }
+    h3 { color: #263238; font-size: 1rem; margin: 16px 0 6px; }
+    p { margin-bottom: 10px; }
+
+    ul { list-style: none; display: grid; gap: 8px; }
+    li::before { content: "\2713"; color: #6D28D9; font-weight: 900; margin-right: 8px; }
+
+    a { color: #6D28D9; font-weight: 700; }
+    .info { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 12px; }
+    .info div { background: #F5F5F7; border-radius: 12px; padding: 12px; }
+    .label { color: #78909C; font-size: .8rem; font-weight: 700; text-transform: uppercase; }
+    .value { color: #263238; font-weight: 800; }
+
+    footer { text-align: center; color: #78909C; margin-top: 36px; }
+    @media (max-width: 768px) { .wrap { padding: 32px 16px 52px; } .card { padding: 20px; } }
+    @media (max-width: 480px) { .screenshots { grid-template-columns: repeat(2, 1fr); } }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Aurora Tile Story</h1>
-    <p class="subtitle">A relaxing offline tile-matching puzzle adventure.</p>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Aurora Tile Story</h1>
+      <p class="subtitle">Relaxing Match-3 Puzzle Adventure</p>
+      <p class="tagline">Match colorful tiles, trigger satisfying cascades, and progress through handcrafted levels in a cozy offline puzzle experience.</p>
+    </section>
 
-    <p>
-      Match colorful tiles, trigger satisfying cascades, and clear handcrafted levels.
-      Aurora Tile Story is designed for quick sessions and long play, with smooth controls,
-      clean UI, and no internet required.
-    </p>
+    <section>
+      <h2>Screenshots</h2>
+      <div class="grid screenshots">
+        <div class="shot"><img src="screenshots_65/01_menu.png" alt="Aurora Tile Story main menu"></div>
+        <div class="shot"><img src="screenshots_65/02_gameplay.png" alt="Core gameplay"></div>
+        <div class="shot"><img src="screenshots_65/03_early.png" alt="Early level board"></div>
+        <div class="shot"><img src="screenshots_65/04_gameover.png" alt="Result screen"></div>
+      </div>
+    </section>
 
-    <ul>
-      <li>Offline single-player gameplay</li>
-      <li>Simple controls, strategic depth</li>
-      <li>Progressive level challenge</li>
-      <li>Lightweight and battery-friendly</li>
-    </ul>
+    <section class="grid cards">
+      <article class="card">
+        <h2>About the Game</h2>
+        <p><strong>Aurora Tile Story</strong> is an offline tile-matching puzzle game focused on smooth controls, clear goals, and satisfying chain reactions.</p>
+        <p>Swap tiles to create matches, clear objectives, and use strategy to maximize your score across increasingly challenging stages.</p>
+      </article>
 
-    <div class="cta">
-      <a class="btn" href="#" aria-label="Download on the App Store">Download on the App Store (Coming Soon)</a>
-    </div>
+      <article class="card">
+        <h2>Features</h2>
+        <ul>
+          <li>Offline single-player puzzle gameplay</li>
+          <li>Simple drag-and-swap controls</li>
+          <li>Progressive level challenge</li>
+          <li>Clean, readable interface</li>
+          <li>Local progress and settings</li>
+        </ul>
+      </article>
 
-    <h2>Screenshots</h2>
-    <div class="grid">
-      <div class="card"><img src="screenshots_65/01_menu.png" alt="Main menu" /></div>
-      <div class="card"><img src="screenshots_65/02_gameplay.png" alt="Gameplay" /></div>
-      <div class="card"><img src="screenshots_65/03_early.png" alt="Early game" /></div>
-      <div class="card"><img src="screenshots_65/04_gameover.png" alt="Result screen" /></div>
-    </div>
-  </div>
+      <article class="card">
+        <h2>Support</h2>
+        <p>If you have questions, feedback, or need help with Aurora Tile Story, use the support link on the App Store product page.</p>
+        <p>For bug reports, include your device model, iOS version, and a short description of the issue.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+      </article>
+
+      <article class="card">
+        <h2>FAQ</h2>
+        <h3>How do I play?</h3>
+        <p>Swap adjacent tiles to make matches and complete each level's objective within the available moves or rules.</p>
+        <h3>Does the app collect personal data?</h3>
+        <p>No. Aurora Tile Story is an offline game and does not collect personal information.</p>
+        <h3>How do I request support?</h3>
+        <p>Use the support link on the App Store product page with your question or issue details.</p>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:20px;">
+      <h2>App Information</h2>
+      <div class="info">
+        <div><p class="label">Genre</p><p class="value">Puzzle</p></div>
+        <div><p class="label">iOS</p><p class="value">15.0+</p></div>
+        <div><p class="label">Version</p><p class="value">1.0.0</p></div>
+        <div><p class="label">Privacy</p><p class="value">Offline</p></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 rosewood. All rights reserved.</p>
+    </footer>
+  </main>
 </body>
 </html>
